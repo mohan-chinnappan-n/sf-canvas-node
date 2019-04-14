@@ -9,7 +9,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://mohan-chinnappan-n.github.io/css/navbar-blue.css">
 
-
+<style>
+    #payload {
+        background-color: black;
+        color:white;
+        font-family: Monaco, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+</style>
 </head>
 <body>
 
@@ -46,7 +53,9 @@
             Signed Request 
         </li>
         <li class="list-group-item">
-          <%- JSON.stringify(payload) %>
+        <textarea name="payload" id="payload" cols="80" rows="20">
+          <%- JSON.stringify(payload, null, 4) %>
+        </textarea>
         </li>
  
     </ul>
