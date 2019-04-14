@@ -2,11 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My App</title>
+    <title>FA App</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://mohan-chinnappan-n.github.io/css/navbar-blue.css">
+
+
 </head>
 <body>
+
+<nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)">FA Canvas App</a>
+        </div>
     
-    <%- JSON.stringify(req) %>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="#/home">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+            <li ><a href="/">Main</a></li>
+            </ul>
+    
+    
+        </div>
+        <!-- /.navbar-collapse -->
+        </nav>
+
+
+    <h3>FA Canvas App</h3>
+    <ul class="list-group">
+        <li class="list-group-item">
+            Signed Request 
+        </li>
+        <li class="list-group-item">
+          <%- JSON.stringify(req) %>
+        </li>
+ 
+    </ul>
 </body>
 
 </html>
