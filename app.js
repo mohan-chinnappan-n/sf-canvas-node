@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ entended: true }));
 app.get('/', function (req, res) {
-  res.render('index');
+  res.render('welcome');
 });
 
 app.post('/signedrequest', function (req, res) {
