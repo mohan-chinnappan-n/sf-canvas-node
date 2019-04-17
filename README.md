@@ -46,4 +46,40 @@ Check System Administrator
 
 Click Save
 
+## How to pass parameters in force:canvasApp component
+
+### Component
+```xml
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
+    <aura:attribute name="parameters" type="String" />
+      
+    Parameters: <ui:outputText value="{!v.parameters}" />
+    <force:canvasApp developerName="AccountPositionApp"  parameters="{!v.parameters}"  />
+
+</aura:component>
+```
+
+### Controller
+```js
+
+({
+    doInit : function(cmp) {
+        var recordId = cmp.get("v.recordId");
+        // Example of writing a URI
+        // var params1 = '{"path": "/recordId/' + recordId + '/view"}';
+        // Example of recordId parameter
+        var params = '{"recordId": "' + recordId + '"}';
+        cmp.set("v.parameters", params);
+        //alert(params);
+    } 
+    
+    
+})
+
+``` 
+
+![Parameters payload](img/canvasParameters.png)
+
+
 

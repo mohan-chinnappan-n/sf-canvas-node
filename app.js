@@ -28,7 +28,6 @@ app.get("/", function(req, res) {
 
 // SF call POST us on this URI with signed request
 app.post("/signedrequest", function(req, res) {
-  console.log("parameters;" + req.body.parameters);
   var signedRequest = decode(req.body.signed_request, consumerSecret),
     context = signedRequest.context,
     oauthToken = signedRequest.client.oauthToken,
