@@ -40,7 +40,7 @@ Click Edit
     For Permitted Users, select Admin approved users are pre-authorized
 
     Click Save
-<hr/>
+---------------------------------------------------------------------------
 
 Click Manage Profiles
 
