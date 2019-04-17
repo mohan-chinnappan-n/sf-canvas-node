@@ -1,0 +1,26 @@
+/*
+// Disable Add Group Button
+var btnEle = document.querySelector('.FinServRelationshipMap button.slds-popover.slds-button--neutral')
+btnEle.style = 'display:none'
+
+// disable DropDown Button
+var dropMenu = document.querySelector('.FinServRelationshipMap a.slds-button')
+
+
+*/
+.FinServRelationshipMap button.slds-popover.slds-button--neutral {
+    display: none;
+}
+
+/*
+
+// disable DropDown Button
+var dropMenu = document.querySelector('.FinServRelationshipMap a.slds-button')
+
+*/
+
+.FinServRelationshipMap a.slds-button {
+    display: none;
+}
+
+

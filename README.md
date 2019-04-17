@@ -3,6 +3,17 @@
 ### Slides
 [SF Heroku Canvas Slides](https://mohan-chinnappan-n2.github.io/2019/canvas/canvas.html)
 
+![Seq diagram](img/canvas-1.png)
+
+[Seq Editor](https://mohan-chinnappan-n2.github.io/2019/viz/seq/seq.html)
+
+``` seq file
+ Canvas App->SF: Register\n as Connected App
+ SF->Canvas App:POST\n /signedrequest
+ Note left of SF: Encoded contextual \ninformation & sesssion-id
+
+```
+
 ### Create a Connected App
 
 [Refer Christophe's doc](http://ccoenraets.github.io/salesforce-developer-advanced/Using-Canvas.html)
