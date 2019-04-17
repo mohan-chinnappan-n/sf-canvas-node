@@ -59,9 +59,12 @@ Click Save
     <force:canvasApp developerName="AccountPositionApp"  parameters="{!v.parameters}"  />
 
 </aura:component>
+
 ```
 
 ### Controller
+
+
 ```js
 
 ({
