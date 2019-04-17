@@ -37,15 +37,16 @@ On the Connected App details page, click the Manage button
 
 Click Edit
 
-For Permitted Users, select Admin approved users are pre-authorized
+    For Permitted Users, select Admin approved users are pre-authorized
 
-Click Save
+    Click Save
+<hr/>
 
 Click Manage Profiles
 
-Check System Administrator
+    Check System Administrator
 
-Click Save
+    Click Save
 ```
 
 ## How to pass parameters in force:canvasApp component
