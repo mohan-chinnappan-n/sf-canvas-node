@@ -31,6 +31,7 @@ On the Connected App details page, click the Click to reveal link next to Consum
 ```
 
 #### Step 2: Configure Permissions
+
 ```
 On the Connected App details page, click the Manage button
 
@@ -45,12 +46,13 @@ Click Manage Profiles
 Check System Administrator
 
 Click Save
+```
 
 ## How to pass parameters in force:canvasApp component
 
 ### Component
 
-```
+```xml
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
     <aura:attribute name="parameters" type="String" />
