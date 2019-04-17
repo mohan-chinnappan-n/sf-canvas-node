@@ -7,6 +7,11 @@
 
 [Refer Christophe's doc](http://ccoenraets.github.io/salesforce-developer-advanced/Using-Canvas.html)
 
+### Doc
+[force:canvasApp doc](https://developer.salesforce.com/docs/component-library/bundle/force:canvasApp/documentation)
+
+<hr/>
+
 #### Step 1: Create a Connected App
 ```
 In Setup, click Build > Create > Apps
