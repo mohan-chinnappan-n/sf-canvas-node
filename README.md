@@ -54,8 +54,8 @@ Click Save
 
 ```xml
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
-	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
-    <aura:attribute name="parameters" type="String" />
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
+     <aura:attribute name="parameters" type="String" />
       
     Parameters: <ui:outputText value="{!v.parameters}" />
     <force:canvasApp developerName="AccountPositionApp"  parameters="{!v.parameters}"  />
