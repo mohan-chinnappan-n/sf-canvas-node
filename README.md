@@ -256,7 +256,7 @@ Click Manage Profiles
         
 ```
 
-### Configuring VisualSource to use Canvas App (AccountPositionApp2, post will be done to /toolbar)
+### Configuring VisualSource to use Canvas App (AccountPositionApp2, POST will be done to /toolbar)
 ```xml
 <apex:page >
   <apex:includeLightning />
@@ -293,7 +293,7 @@ Click Manage Profiles
 
 
  -->
-  <apex:canvasApp applicationName="AccountPositionApp2" height="400px" width="400px"
+  <apex:canvasApp applicationName="AccountPositionApp2" 
     height="1000px" width="800px"
     parameters="{recordId:'001sfddfsdfsdf'}"
     onCanvasAppLoad="subscribeToCanvasEvent()"/>
