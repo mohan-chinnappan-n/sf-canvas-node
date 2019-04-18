@@ -17,10 +17,10 @@
 
 ### Create a Connected App
 
-[Refer Christophe's doc](http://ccoenraets.github.io/salesforce-developer-advanced/Using-Canvas.html)
+[Refer: Christophe's doc](http://ccoenraets.github.io/salesforce-developer-advanced/Using-Canvas.html)
 
 ### Doc
-[force:canvasApp doc](https://developer.salesforce.com/docs/component-library/bundle/force:canvasApp/documentation)
+[Refer: force:canvasApp doc](https://developer.salesforce.com/docs/component-library/bundle/force:canvasApp/documentation)
 
 <hr/>
 
