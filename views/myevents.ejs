@@ -21,13 +21,13 @@
 function postCustomMessage() {
      var signedRequest = JSON.parse('<%- JSON.stringify(signedRequest) %>');
      // the payload, you can put the parameters from the signedRequest
-     Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {status : signedRequest.context.parameters}});
+     Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {parameters : signedRequest.context.parameters}});
 }
 
 </script>
 
 <ul class='list-group'>
-        <li class='list-group-item'><a href="#" onclick="postCustomMessage();">Send Dennis Ritchie</a></li>
+        <li class='list-group-item'><a href="#" onclick="postCustomMessage();">Send to Dennis Ritchie</a></li>
     </ul>
 </body>
 </html>

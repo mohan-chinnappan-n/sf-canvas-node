@@ -276,14 +276,15 @@ $ cat views/js/payload.json | jq '.context.environment.parameters'
       // this function will be called as soon as the Canvas App is loaded (onCanvasAppLoad)
       // ref: https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_app_event_subscribe_code_example.htm
       // statusChanged is the name of the custom event we will subscribe to
-      // see: app toolbar.ejs 
+      // see: app myevents.ejs 
       //   it has publish for this custom event
-      //        Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {status : signedRequest.context.parameters}});
+      //        Sfdc.canvas.client.publish(signedRequest.client, 
+       //          {name : "statusChanged", payload : {parameters : signedRequest.context.parameters}});
 
       function subscribeToCanvasEvent() {
-          Sfdc.canvas.controller.subscribe({name : 'statusChanged', onData : function (e) {
-              var id = "yourId here";
-              console.log("id:" + id);
+          Sfdc.canvas.controller.subscribe({name : 'statusChanged', onData : function (payload) {
+              var recordId =  payload.parameters.recordId;
+              console.log("recordId:" + recordId);
               // ref: https://developer.salesforce.com/docs/atlas.en-us.salesforce1.meta/salesforce1/salesforce1_dev_jsapi_sforce_one.htm
               // format: sforce.one.navigateToSObject(recordId, view)
               // view specifies the slide within record home to display initially.
@@ -291,7 +292,7 @@ $ cat views/js/payload.json | jq '.context.environment.parameters'
               //   detail: the record detail slide
               //   chatter: the Chatter slide
               //   related: the view of related slide
-              sforce.one.navigateToSObject(id,"related");
+              sforce.one.navigateToSObject(recordId,"related");
           }});
       }
 
