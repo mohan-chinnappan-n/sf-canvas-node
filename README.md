@@ -276,10 +276,10 @@ $ cat views/js/payload.json | jq '.context.environment.parameters'
       // this function will be called as soon as the Canvas App is loaded (onCanvasAppLoad)
       // ref: https://developer.salesforce.com/docs/atlas.en-us.platform_connect.meta/platform_connect/canvas_app_event_subscribe_code_example.htm
       // statusChanged is the name of the custom event we will subscribe to
-      // see: app myevents.ejs 
+      // see: app.js and  myevents.ejs 
       //   it has publish for this custom event
       //        Sfdc.canvas.client.publish(signedRequest.client, 
-       //          {name : "statusChanged", payload : {parameters : signedRequest.context.parameters}});
+      //          {name : "statusChanged", payload : {parameters : signedRequest.context.parameters}});
 
       function subscribeToCanvasEvent() {
           Sfdc.canvas.controller.subscribe({name : 'statusChanged', onData : function (payload) {
