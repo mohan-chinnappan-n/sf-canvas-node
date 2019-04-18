@@ -29,7 +29,7 @@ app.get("/", function(req, res) {
 // SF call POST us on this URI with signed request
 app.post("/signedrequest", function(req, res) {
   console.log(req.body.signed_request);
-  
+
   var signedRequest = decode(req.body.signed_request, consumerSecret),
     context = signedRequest.context,
     oauthToken = signedRequest.client.oauthToken,
@@ -57,6 +57,14 @@ app.post("/signedrequest", function(req, res) {
     res.render("index", { payload: payload });
   });
 });
+
+
+// POST to toolbar URI - make this uri as Canvas App URL in the connected app setting 
+app.post("/toolbar", function(req, res) {
+  var signedRequest = decode(req.body.signed_request, consumerSecret);
+  res.render("toolbar", {signedRequest: signedRequest});
+});
+
 
 var port = process.env.PORT || 9000;
 app.listen(port);

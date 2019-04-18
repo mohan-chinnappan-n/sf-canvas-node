@@ -20,7 +20,31 @@ var dropMenu = document.querySelector('.FinServRelationshipMap a.slds-button')
 */
 
 .FinServRelationshipMap a.slds-button {
+    display: block;
+}
+
+/*
+
+//*[@id="460:1446;a"]/div/ul/li[1]/a/div
+#\34 60\3a 1446\3b a > div > ul > li:nth-child(1) > a > div
+
+#\34 60\3a 1446\3b a > div > ul > li:nth-child(1) > a > div
+
+back-button:
+var backBtn =  document.querySelector('body > div.desktop.container.forceStyle.oneOne.lafStandardLayoutContainer.lafAppLayoutHost.forceAccess.forceStyle.oneOne > div.DESKTOP.uiContainerManager > div.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active > div.panel.slds-modal.slds-fade-in-open > div > div.modal-footer.slds-modal__footer > div > div.slds-order--1.slds-size--3-of-7.slds-align-middle.slds-text-align--left > button > span')
+backBtn.style='display:none';
+*/
+
+body > div.desktop.container.forceStyle.oneOne.lafStandardLayoutContainer.lafAppLayoutHost.forceAccess.forceStyle.oneOne > div.DESKTOP.uiContainerManager > div.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active > div.panel.slds-modal.slds-fade-in-open > div > div.modal-footer.slds-modal__footer > div > div.slds-order--1.slds-size--3-of-7.slds-align-middle.slds-text-align--left > button > span {
     display: none;
 }
+
+/*
+#\34 09\3a 1332\3b a > div > ul > li:nth-child(2) > a
+
+a > div > ul > li:nth-child(2) > a > div
+*/
+
+
 
 
