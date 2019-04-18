@@ -59,7 +59,7 @@ app.post("/signedrequest", function(req, res) {
 });
 
 
-// POST to toolbar URI - make this uri as Canvas App URL in the connected app setting 
+// POST to toolbar URI - make this uri as Canvas App URL in the connected app (AccountPositionApp2) setting 
 app.post("/toolbar", function(req, res) {
   var signedRequest = decode(req.body.signed_request, consumerSecret);
   res.render("toolbar", {signedRequest: signedRequest});
