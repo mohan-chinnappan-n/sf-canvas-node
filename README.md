@@ -278,7 +278,7 @@ $ cat views/js/payload.json | jq '.context.environment.parameters'
       // statusChanged is the name of the custom event we will subscribe to
       // see: app toolbar.ejs 
       //   it has publish for this custom event
-      //       Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {status : 'Completed'}});
+      //        Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {status : signedRequest.context.parameters}});
 
       function subscribeToCanvasEvent() {
           Sfdc.canvas.controller.subscribe({name : 'statusChanged', onData : function (e) {

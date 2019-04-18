@@ -20,8 +20,8 @@
 <script>
 function postCustomMessage() {
      var signedRequest = JSON.parse('<%- JSON.stringify(signedRequest) %>');
-     console.log("publishing now...");
-     Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {status : 'Completed'}});
+     // the payload, you can put the parameters from the signedRequest
+     Sfdc.canvas.client.publish(signedRequest.client, {name : "statusChanged", payload : {status : signedRequest.context.parameters}});
 }
 
 </script>
