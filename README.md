@@ -3,11 +3,12 @@
 ### Slides
 [SF Heroku Canvas Slides](https://mohan-chinnappan-n2.github.io/2019/canvas/canvas.html)
 
-![Seq diagram](img/canvas-1.png)
+![Sequence diagram](img/canvas-1.png)
 
-[Seq Editor](https://mohan-chinnappan-n2.github.io/2019/viz/seq/seq.html)
+[UML Sequence Editor](https://mohan-chinnappan-n2.github.io/2019/viz/seq/seq.html)
 
-``` seq file
+### Code for the Sequence diagram
+``` 
  Canvas App->SF: Register\n as Connected App
  SF->Canvas App:POST\n /signedrequest
  Note left of SF: Encoded contextual \ninformation & sesssion-id
